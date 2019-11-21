@@ -12,9 +12,10 @@ int main(int argc, char *argv[]) {
 	fp = fopen("smaple.txt","w");
 	for(i=0; i<3; i++)
 	{
-		printf("input a word: ");
-		scanf("%s", input);
-		fprintf(fp, "%s\n", input);
+		//printf("input a word: ");
+		//scanf("%s", input);
+		fscanf(fp, "%s", input);
+		printf("%s\n", input);
 	}
 	
 	fclose(fp);
